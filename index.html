@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电商网站</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" href="img/100du.ico"/>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/tween.js"></script>
+    <!--解决png问题-->
+    <!--[if IE 6]>
+    <script src="js/DD_belatedPNG_0.0.8a.js"></script>
+    <script>DD_belatedPNG.fix('*');</script>
+    <![endif]-->
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div id="header" class="gradient">
+    <p class="city" id="city">
+        切换城市：
+        <a href="javasript:;" class="active">北京</a>
+        <a href="javasript:;">上海</a>
+        <a href="javasript:;">广州</a>
+        <a href="javasript:;">深圳</a>
+        <a href="javasript:;">杭州</a>
+    </p>
+    <p class="link">
+        <a href="#" class="ico1">店铺管理</a>|
+        <a href="#" class="ico2">加盟JOY</a>
+    </p>
+</div>
+<div id="nav">
+    <ul class="nav_1">
+        <li><a class="bg1" href="#">美食</a></li>
+        <li><a class="bg2" href="#">语音</a></li>
+        <li><a class="bg3" href="#">购物</a></li>
+        <li><a class="bg4" href="#">文化</a></li>
+        <li><a class="bg5" href="#">休闲</a></li>
+    </ul>
+    <h1><a href="#"><img src="img/logo.png" alt="100"></a></h1>
+    <ul class="nav_2">
+        <li><a class="bg6" href="#">出差</a></li>
+        <li><a class="bg7" href="#">知道</a></li>
+        <li><a class="bg8" href="#">理财</a></li>
+        <li><a class="bg9" href="#">聊天</a></li>
+        <li><a class="bg10" href="#">酒店</a></li>
+    </ul>
+</div>
+<div id="search" class="gradient">
+    <div class="img"></div>
+    <div class="bar">
+        <ul class="menu" id="menu">
+            <li class="active">搜店</li>
+            <li class="gradient">地址</li>
+            <li class="gradient">优惠券</li>
+            <li class="gradient">全文</li>
+            <li class="gradient">视频</li>
+        </ul>
+    </div>
+    <div class="form">
+        <form action="#">
+            <input type="text" class="text" value=""/>
+            <input type="submit" class="btn" value=""/>
+        </form>
+    </div>
+    <p class="key_text"><a href="#">啦啦啦啦</a> <a href="#">啦啦啦</a> <a href="#">啦啦啦</a> <a href="#">啦啦啦</a>
+        <a href="#">啦啦啦啦</a> <a href="#">啦啦啦啦</a> <a href="#">啦啦啦</a>
+        <a href="#">啦啦啦</a> <a href="#">啦啦</a>...</p>
+    <div class="img"></div>
+    <div class="update">
+        <div class="wrap">
+            <ul></ul>
+        </div>
+        <a class="triangle_up" id="uBtnUp" href="javascript:;"></a>
+        <a class="triangle_down_red" id="uBtnDown" href="javascript:;"></a>
+    </div>
+</div>
+<div class="content clear">
+    <div class="main fl">
+        <div class="main_wrap clear">
+            <div class="activity fl">
+                <h2 class="new_title">
+                    <strong>LUCKY TODAY</strong>
+                    <span>每日活动</span>
+                    <em>2017.9</em>
+                </h2>
+                <div class="con">
+                    <div class="info">
+                        <div class="img">
+                            <span class="mask"></span>
+                            <img src="img/content/today1.gif" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>
+                                <em>09</em>
+                                <em>10</em>
+                                <span>本日主题：XXXXXXX</span>
+                            </h3>
+                            <p>啦啦啦啦啦啦啦-啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</p>
+                        </div>
+                    </div>
+                    <div class="calendar">
+                        <h3>
+                            <span>MON</span>
+                            <span>TUE</span>
+                            <span>WED</span>
+                            <span>THU</span>
+                            <span>FRI</span>
+                            <span>SAT</span>
+                            <span>SUN</span>
+                        </h3>
+                        <ol>
+                            <li class="normal">28</li>
+                            <li class="normal">29</li>
+                            <li class="normal">30</li>
+                            <li class="normal">31</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10
+                                <img class="active" src="img/content/today1.gif"  info="迟到的荣誉——啦啦啦，现在还写电商
+                                网站，呃好吧，没词儿了~~"alt="">
+                            </li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15
+                                <img class="img" src="img/content/today2.gif" info="这似乎是海参配燕窝，好味道~" alt="">
+                            </li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                            <li>20
+                                <img class="img" src="img/content/hot8.gif" info="帅哥是谁？陪谁去过情人节？" alt="">
+                            </li>
+                            <li>21</li>
+                            <li>22</li>
+                            <li>23
+                                <img class="img" src="img/content/hot4.gif" info="气质美女，陪谁去过明天的情人节？" alt="">
+                            </li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>26</li>
+                            <li>27</li>
+                            <li>28</li>
+                            <li>29</li>
+                            <li>30</li>
+                            <li class="normal">31</li>
+                            <li class="normal">1</li>
+                            <li class="normal">2</li>
+                            <li class="normal">3</li>
+                            <li class="normal">4</li>
+                            <li class="normal">5</li>
+                            <li class="normal">6</li>
+                            <li class="normal">7</li>
+                        </ol>
+                        <div class="today_info">
+                            <span></span>
+                            <img src="img/content/today2.gif" alt="">
+                            <div class="text">
+                                <h4><strong>FRI  </strong>本日主题</h4>
+                                <p>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recommend fr">
+                <h2 class="new_title">
+                    <strong>RECOMMEND</strong>
+                    <span>精彩推荐</span>
+                </h2>
+                <div class="pic" id="fade">
+                    <ul>
+                        <li><a href="#"><img src="img/content/img1.gif" alt=""></a></li>
+                        <li><a href="#"><img src="img/content/img2.gif" alt=""></a></li>
+                        <li><a href="#"><img src="img/content/img3.gif" alt=""></a></li>
+                    </ul>
+                    <ol>
+                        <li class="active"><a href="javascript:;"><img src="img/content/img1.gif" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="img/content/img2.gif" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="img/content/img3.gif" alt=""></a></li>
+                    </ol>
+                    <p>爸爸去哪儿~</p>
+                </div>
+                <ul class="list">
+                    <li>
+                        <em><img src="img/content/recommend_list_ico1.gif"> &nbsp;|</em>
+                        <a href="#"><b>[<i>休闲</i>]</b>&nbsp;啦啦啦啦啦啦啦啦啦啦啦啦啦啦...</a>
+                        <span>17/09/15</span>
+                    </li>
+                    <li>
+                        <em><img src="img/content/recommend_list_ico2.gif"> &nbsp;|</em>
+                        <a href="#"><b>[<i>休闲</i>]</b>&nbsp;啦啦啦啦啦啦啦啦啦啦啦啦啦啦...</a>
+                        <span>17/09/15</span>
+                    </li>
+                    <li>
+                        <em><img src="img/content/recommend_list_ico1.gif"> &nbsp;|</em>
+                        <a href="#"><b>[<i>休闲</i>]</b>&nbsp;啦啦啦啦啦啦啦啦啦啦啦啦啦啦...</a>
+                        <span>17/09/15</span>
+                    </li>
+                    <li>
+                        <em><img src="img/content/recommend_list_ico2.gif"> &nbsp;|</em>
+                        <a href="#"><b>[<i>休闲</i>]</b>&nbsp;啦啦啦啦啦啦啦啦啦啦啦啦啦啦...</a>
+                        <span>17/09/15</span>
+                    </li>
+                    <li>
+                        <em><img src="img/content/recommend_list_ico1.gif"> &nbsp;|</em>
+                        <a href="#"><b>[<i>休闲</i>]</b>&nbsp;啦啦啦啦啦啦啦啦啦啦啦啦啦啦...</a>
+                        <span>17/09/15</span>
+                    </li>
+                    <li>
+                        <em><img src="img/content/recommend_list_ico2.gif"> &nbsp;|</em>
+                        <a href="#"><b>[<i>休闲</i>]</b>&nbsp;啦啦啦啦啦啦啦啦啦啦啦啦啦啦...</a>
+                        <span>17/09/15</span>
+                    </li>
+                    <li>
+                        <em><img src="img/content/recommend_list_ico1.gif"> &nbsp;|</em>
+                        <a href="#"><b>[<i>休闲</i>]</b>&nbsp;啦啦啦啦啦啦啦啦啦啦啦啦啦啦...</a>
+                        <span>17/09/15</span>
+                    </li>
+                    <li>
+                        <em><img src="img/content/recommend_list_ico2.gif"> &nbsp;|</em>
+                        <a href="#"><b>[<i>休闲</i>]</b>&nbsp;啦啦啦啦啦啦啦啦啦啦啦啦啦啦...</a>
+                        <span>17/09/15</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main_ad"><a href="#"><img src="img/ad/ad4.jpg" alt=""></a></div>
+        <div class="main_wrap clear">
+            <div class="section fl">
+                <h2 class="video_title">WHAT'S HOT</h2>
+                <div class="video">
+                    <video id="video" controls="" poster ="video/poster.png" width="319" height="234">
+                        <source src="video/tweetsip.mp4">
+                        <source src="video/tweetsip.webm">
+                        <source src="video/tweetsip.ogv">
+                        <p>Sorry, your browser doesn't support the video element.</p>
+                    </video>
+                </div>
+                <div class="video_list">
+                    <ul>
+                        <li><a href="#">啦啦啦啦：啦啦啦啦啦啦啦啦</a></li>
+                        <li><a href="#">啦啦啦啦：啦啦啦啦啦啦啦啦</a></li>
+                        <li><a href="#">啦啦啦啦：啦啦啦啦啦啦啦啦</a></li>
+                        <li><a href="#">啦啦啦啦：啦啦啦啦啦啦啦啦</a></li>
+                        <li><a href="#">啦啦啦啦：啦啦啦啦啦啦啦啦</a></li>
+                    </ul>
+                    <a class="more" href="#"><img src="img/more.gif" alt="more"></a>
+                </div>
+            </div>
+            <div class="options fr">
+                <ul class="nav tabNav1">
+                    <li class="active fl">
+                        <strong>HOT SHOP <span>红店铺</span></strong>
+                        <a class="triangle_down_red" href="javascript:;"></a>
+                    </li>
+                    <li class="gradient fr">
+                        <strong class="strong_grey">EW SHOP <span>新开张</span></strong>
+                        <a class="triangle_down_grey" href="javascript:;"></a>
+                    </li>
+                </ul>
+                <div class="con">
+                    <div class="hot_list">
+                        <ul class="tabCon1">
+                            <li>
+                                <div class="img"><a href="#"><img src="img/content/hot_list_pic1.gif" alt=""></a></div>
+                                <div class="text">
+                                    <h3><a href="#">啦啦啦啦啦啦啦啦店</a></h3>
+                                    <br>
+                                    区域：啦啦啦</br>
+                                    人均：888元</br>
+                                    人气：233333
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img"><a href="#"><img src="img/content/hot_list_pic2.gif" alt=""></a></div>
+                                <div class="text">
+                                    <h3><a href="#">cccccccccccc店</a></h3>
+                                    <br>
+                                    区域省：啦啦啦</br>
+                                    人均：888元</br>
+                                    人气：233333
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img"><a href="#"><img src="img/content/hot_list_pic3.gif" alt=""></a></div>
+                                <div class="text">
+                                    <h3><a href="#">啦啦啦啦啦啦啦啦店</a></h3>
+                                    <br>
+                                    区域省：啦啦啦</br>
+                                    人均：888元</br>
+                                    人气：233333
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="tabCon1">
+                            <li>
+                                <div class="img"><a href="#"><img src="img/content/hot_list_pic4.gif" alt=""></a></div>
+                                <div class="text">
+                                    <h3><a href="#">aaaaaaaa店</a></h3>
+                                    <br>
+                                    区域：啦啦啦/CBD</br>
+                                    人均：666元</br>
+                                    人气：233333
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img"><a href="#"><img src="img/content/hot_list_pic5.gif" alt=""></a></div>
+                                <div class="text">
+                                    <h3><a href="#">啦啦啦啦啦啦啦啦店</a></h3>
+                                    <br>
+                                    区域：啦啦啦/CBD</br>
+                                    人均：666元</br>
+                                    人气：233333
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img"><a href="#"><img src="img/content/hot_list_pic6.gif" alt=""></a></div>
+                                <div class="text">
+                                    <h3><a href="#">bbbbbbbbbb店</a></h3>
+                                    <br>
+                                    区域：啦啦啦/CBD</br>
+                                    人均：666元</br>
+                                    人气：233333
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="more" href="#"><img src="img/more.gif" alt="more"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_wrap clear">
+            <div class="options fl">
+                <ul class="nav tabNav2">
+                    <li class="active fl">
+                        <strong>SUBWAY <span>地铁交通</span></strong>
+                        <a class="triangle_down_red" href="javascript:;"></a>
+                    </li>
+                    <li class="gradient fr">
+                        <strong class="strong_grey">MAP <span>生活圈</span></strong>
+                        <a class="triangle_down_grey" href="javascript:;"></a>
+                    </li>
+                </ul>
+               <div class="con life">
+                    <img class="tabCon2" src="img/content/123.gif" alt="">
+                    <img class="tabCon2" src="img/content/456.gif" alt="">
+                </div>
+            </div>
+            <div class="section fr bbs">
+                <h2 class="main_title">
+                    <strong>BBS <span>论坛</span></strong>
+                    <a href="#"><img src="img/more.gif" alt="more"></a>
+                </h2>
+                <ol>
+                    <li class="active">
+                        <strong>01</strong>
+                        <img src="img/content/bbs_img1.gif" alt="">
+                        <a href="#">啦啦啦啦啦啦啦啦</a>
+                        <span>啦啦啦</span>
+                        <em>ONE</em>
+                        <b>啦啦啦啦</b>
+                    </li>
+                    <li>
+                        <strong>02</strong>
+                        <img src="img/content/hot2.gif" alt="">
+                        <a href="#">啦啦啦啦啦啦啦啦</a>
+                        <span>啦啦啦</span>
+                        <em>TWO</em>
+                        <b>啦啦啦啦</b>
+                    </li>
+                    <li>
+                        <strong>03</strong>
+                        <img src="img/content/hot4.gif" alt="">
+                        <a href="#">啦啦啦啦啦啦啦啦</a>
+                        <span>啦啦啦</span>
+                        <em>THREE</em>
+                        <b>啦啦啦啦</b>
+                    </li>
+                    <li>
+                        <strong>04</strong>
+                        <img src="img/content/hot5.gif" alt="">
+                        <a href="#">啦啦啦啦啦啦啦啦</a>
+                        <span>啦啦啦</span>
+                        <em>FOUR</em>
+                        <b>啦啦啦啦</b>
+                    </li>
+                    <li>
+                        <strong>05</strong>
+                        <img src="img/content/hot8.gif" alt="">
+                        <a href="#">啦啦啦啦啦啦啦啦</a>
+                        <span>啦啦啦</span>
+                        <em>FIVE</em>
+                        <b>啦啦啦啦</b>
+                    </li>
+                    <li>
+                        <strong>06</strong>
+                        <img src="img/content/hot7.gif" alt="">
+                        <a href="#">啦啦啦啦啦啦啦啦</a>
+                        <span>啦啦啦</span>
+                        <em>SIX</em>
+                        <b>啦啦啦啦</b>
+                    </li>
+                    <li>
+                        <strong>07</strong>
+                        <img src="img/content/hot9.gif" alt="">
+                        <a href="#">啦啦啦啦啦啦啦啦</a>
+                        <span>啦啦啦</span>
+                        <em>SEVEN</em>
+                        <b>啦啦啦啦</b>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="main_wrap clear">
+            <div class="section fl">
+                <h2 class="main_title">
+                    <strong>LIFESTYLE ADVANCE <span>知道分子</span></strong>
+                    <a href="#"><img src="img/more.gif" alt="more"></a>
+                </h2>
+                <div class="tab">
+                    <ul class="tabNav4">
+                        <li class="active">
+                            有人在问
+                            <a class="triangle_down_red" href="javascript:;"></a>
+                        </li>
+                        <li class="gradient">
+                            有人知道
+                            <a class="triangle_down_grey" href="javascript:;"></a>
+                        </li>
+                        <li class="gradient">
+                            热门问题
+                            <a class="triangle_down_grey" href="javascript:;"></a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="list_section tabCon4">
+                    <li class="title">
+                        <span class="col1">标题</span>
+                        <span class="col2">状态</span>
+                    </li>
+                    <li>
+                        <span class="col1">
+                            <a href="#"><em>[<span>休闲</span>]</em> 这里随便写点什么吧啦啦啦啦啦</a>
+                        </span>
+                        <span class="col2"><img src="img/ico1.gif" alt=""></span>
+                    </li>
+                    <li>
+                        <span class="col1">
+                            <a href="#"><em>[<span>休闲</span>]</em> 这里随便写点什么吧啦啦啦啦啦啦啦啦</a>
+                        </span>
+                        <span class="col2"><img src="img/ico1.gif" alt=""></span>
+                    </li>
+                    <li>
+                        <span class="col1">
+                            <a href="#"><em>[<span>休闲</span>]</em> 这里随便写点什么吧啦啦啦啦啦啦啦</a>
+                        </span>
+                        <span class="col2"><img src="img/ico2.gif" alt=""></span>
+                    </li>
+                    <li>
+                        <span class="col1">
+                            <a href="#"><em>[<span>休闲</span>]</em> 这里随便写点什么吧啦啦啦啦啦</a>
+                        </span>
+                        <span class="col2"><img src="img/ico2.gif" alt=""></span>
+                    </li>
+                    <li>
+                        <span class="col1">
+                            <a href="#"><em>[<span>休闲</span>]</em> 这里随便写点什么吧啦啦啦啦啦</a>
+                        </span>
+                        <span class="col2"><img src="img/ico1.gif" alt=""></span>
+                    </li>
+                </ul>
+                <ul class="list_section tabCon4">
+                    <li class="title">
+                        <span class="col1">标题</span>
+                        <span class="col2">状态</span>
+                    </li>
+                    <li>
+                        <span class="col1">
+                            <a href="#"><em>[<span>休闲</span>]</em> 呀呀呀呀呀呀呀呀呀呀呀呀呀呀呀呀呀</a>
+                        </span>
+                        <span class="col2"><img src="img/ico2.gif" alt=""></span>
+                    </li>
+                    <li>
+                        <span class="col1">
+                            <a href="#"><em>[<span>休闲</span>]</em> 呀呀呀呀呀呀呀呀呀呀呀呀呀呀呀呀呀</a>
+                        </span>
+                        <span class="col2"><img src="img/ico1.gif" alt=""></span>
+                    </li>
+                    <li>
+                        <span class="col1">
+                            <a href="#"><em>[<span>休闲</span>]</em> 呀呀呀呀呀呀呀呀呀呀呀呀呀呀呀呀呀</a>
+                        </span>
+                        <span class="col2"><img src="img/ico1.gif" alt=""></span>
+                    </li>
+                    <li>
+                        <span class="col1">
+                            <a href="#"><em>[<span>休闲</span>]</em> 呀呀呀呀呀呀呀呀呀呀呀呀呀呀呀呀呀</a>
+                        </span>
+                        <span class="col2"><img src="img/ico2.gif" alt=""></span>
+                    </li>
+                    <li>
+                        <span class="col1">
+                            <a href="#"><em>[<span>休闲</span>]</em> 呀呀呀呀呀呀呀呀呀呀呀呀呀呀呀呀呀</a>
+                        </span>
+                        <span class="col2"><img src="img/ico2.gif" alt=""></span>
+                    </li>
+                </ul>
+                <ul class="list_section tabCon4">
+                    <li class="title">
+                        <span class="col1">标题</span>
+                        <span class="col2">状态</span>
+                    </li>
+                    <li>
+                        <span class="col1">
+                            <a href="#"><em>[<span>休闲</span>]</em> 么么么么么么么么么么么么么么么么</a>
+                        </span>
+                        <span class="col2"><img src="img/ico1.gif" alt=""></span>
+                    </li>
+                    <li>
+                        <span class="col1">
+                            <a href="#"><em>[<span>休闲</span>]</em> 么么么么么么么么么么么么么么么么</a>
+                        </span>
+                        <span class="col2"><img src="img/ico2.gif" alt=""></span>
+                    </li>
+                    <li>
+                        <span class="col1">
+                            <a href="#"><em>[<span>休闲</span>]</em> 么么么么么么么么么么么么么么么么</a>
+                        </span>
+                        <span class="col2"><img src="img/ico1.gif" alt=""></span>
+                    </li>
+                    <li>
+                        <span class="col1">
+                            <a href="#"><em>[<span>休闲</span>]</em>么么么么么么么么么么么么么么么么</a>
+                        </span>
+                        <span class="col2"><img src="img/ico2.gif" alt=""></span>
+                    </li>
+                    <li>
+                        <span class="col1">
+                            <a href="#"><em>[<span>休闲</span>]</em> 么么么么么么么么么么么么么么么么</a>
+                        </span>
+                        <span class="col2"><img src="img/ico1.gif" alt=""></span>
+                    </li>
+                </ul>
+                <div class="soso">
+                    <form action="#">
+                        <strong>搜搜谁知道：</strong>
+                        <input class="text" type="text"/>
+                        <input class="btn" type="submit" value="">
+                    </form>
+                </div>
+            </div>
+            <div class="section fr">
+                <h2 class="main_title">
+                    <strong>HOT <span>红人烧客</span></strong>
+                    <a href="#"><img src="img/more.gif" alt="more"></a>
+                </h2>
+                <div class="hot_area">
+                    <ul>
+                        <li><img src="img/content/hot1.gif" alt=""/></li>
+                        <li><img src="img/content/hot2.gif" alt=""/></li>
+                        <li class="area1">
+                            <img src="img/content/hot3.gif" alt=""/>
+                        </li>
+                        <li><img src="img/content/hot4.gif" alt=""/></li>
+                        <li><img src="img/content/hot5.gif" alt=""/></li>
+                        <li class="area2"><img src="img/content/hot6.gif" alt=""/></li>
+                        <li class="area2"><img src="img/content/hot7.gif" alt=""/></li>
+                        <li><img src="img/content/hot8.gif" alt=""/></li>
+                        <li><img src="img/content/hot9.gif" alt=""/></li>
+                        <li class="area2"><img src="img/content/hot10.gif" alt=""/></li>
+                        <li class="area2"><img src="img/content/hot11.gif" alt=""/></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main_wrap clear">
+            <div class="section fl">
+                <h2 class="main_title">
+                    <strong>HELP <span>在线帮助</span></strong>
+                </h2>
+                <div class="help">
+                    <p>您有任何问题，都可以通过全国免费电话，或MSN在线客服与我们联系！</p>
+                    <ul>
+                        <li class="phone fl">888-888-666</li>
+                        <li class="email fr">joyous.com@qq.cn</li>
+                    </ul>
+                    <dl class="fl">
+                        <dt>用户帮助</dt>
+                        <dd><a href="#">金币是什么</a></dd>
+                        <dd><a href="#">怎样查看我的等级</a></dd>
+                        <dd><a href="#">怎么赚积分</a></dd>
+                    </dl>
+                    <dl class="fr">
+                        <dt>商户帮助</dt>
+                        <dd><a href="#">如何成为明星商户</a></dd>
+                        <dd><a href="#">邮件推广</a></dd>
+                        <dd><a href="#">论坛推广方法</a></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="section fr">
+                <h2 class="main_title">
+                    <strong>JOY IN THE MEDIA <span>媒体声音</span></strong>
+                    <a href="#"><img src="img/more.gif" alt="more"></a>
+                </h2>
+                <ul class="media">
+                    <li>
+                        <a href="#"><img src="img/content/media1.gif" alt="1"></a>
+                        <p class="psp">日本最大的财经杂志的报道</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/content/media2.gif" alt="2"></a>
+                        <p>视频网站欢乐网获网络视听许可证</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/content/media3.gif" alt="3"></a>
+                        <p>互联网上的视频橱窗</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/content/media4.gif" alt="4"></a>
+                        <p>欢乐主义的机会</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="side fr">
+        <div class="login">
+            <h2 class="gradient">
+                <strong>LOAD <span>登录</span></strong>
+            </h2>
+            <div class="form">
+                <form action="#">
+                    <ul>
+                        <li>
+                            <span>用户名：</span>
+                            <input class="text" type="text">
+                            <label>
+                                <input class="checkbox" type="checkbox">
+                                <strong>记住我</strong>
+                            </label>
+                        </li>
+                        <li>
+                            <span>密 码：</span>
+                            <input class="text" type="text">
+                            <input class="btn" type="submit" value="登录">
+                        </li>
+                    </ul>
+                </form>
+                <p>
+                    <a href="#">新用户注册</a>
+                    <a href="#">忘记密码了</a>
+                </p>
+            </div>
+        </div>
+        <div class="side_ad"><a href="#"><img src="img/ad/ad2.jpg" alt=""></a></div>
+        <div class="ad_border"><a href="#"><img src="img/ad/ad3.jpg" alt=""></a></div>
+        <div class="side_section">
+            <h2 class="main_title">
+                <strong>COUPONS <span>抢券儿</span></strong>
+                <a href="#"><img src="img/more.gif" alt="more"></a>
+            </h2>
+            <div class="wrap_section1">
+                <div class="tab">
+                    <ul class="tabNav3">
+                        <li class="active">
+                            人气
+                            <a class="triangle_down_red" href="javascript:;"></a>
+                        </li>
+                        <li class="gradient">
+                            推荐
+                            <a class="triangle_down_grey" href="javascript:;"></a>
+                        </li>
+                        <li class="gradient">
+                            最新
+                            <a class="triangle_down_grey" href="javascript:;"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list_section tabCon3">
+                        <li class="title">
+                            <span class="col1">商店名</span>
+                            <span class="col2">省</span>
+                            <span class="col3">打印</span>
+                        </li>
+                        <li>
+                            <span class="col1"><a href="#">这里随便写点什么吧</a></span>
+                            <span class="col2 col2_color">12%</span>
+                            <span class="col3">345</span>
+                        </li>
+                        <li>
+                            <span class="col1"><a href="#">这里随便写点什么吧</a></span>
+                            <span class="col2 col2_color">12%</span>
+                            <span class="col3">345</span>
+                        </li>
+                        <li>
+                            <span class="col1"><a href="#">这里随便写点什么吧</a></span>
+                            <span class="col2 col2_color">12%</span>
+                            <span class="col3">345</span>
+                        </li>
+                        <li>
+                            <span class="col1"><a href="#">这里随便写点什么吧</a></span>
+                            <span class="col2 col2_color">12%</span>
+                            <span class="col3">345</span>
+                        </li>
+                        <li>
+                            <span class="col1"><a href="#">这里随便写点什么吧</a></span>
+                            <span class="col2 col2_color">12%</span>
+                            <span class="col3">345</span>
+                        </li>
+                    </ul>
+                    <ul class="list_section tabCon3">
+                        <li class="title">
+                            <span class="col1">商店名</span>
+                            <span class="col2">省</span>
+                            <span class="col3">打印</span>
+                        </li>
+                        <li>
+                            <span class="col1"><a href="#">啦啦啦啦啦啦啦啦啦</a></span>
+                            <span class="col2 col2_color">13%</span>
+                            <span class="col3">345</span>
+                        </li>
+                        <li>
+                            <span class="col1"><a href="#">啦啦啦啦啦啦啦啦啦</a></span>
+                            <span class="col2 col2_color">13%</span>
+                            <span class="col3">345</span>
+                        </li>
+                        <li>
+                            <span class="col1"><a href="#">啦啦啦啦啦啦啦啦啦</a></span>
+                            <span class="col2 col2_color">13%</span>
+                            <span class="col3">345</span>
+                        </li>
+                        <li>
+                            <span class="col1"><a href="#">啦啦啦啦啦啦啦啦啦</a></span>
+                            <span class="col2 col2_color">13%</span>
+                            <span class="col3">345</span>
+                        </li>
+                        <li>
+                            <span class="col1"><a href="#">啦啦啦啦啦啦啦啦啦</a></span>
+                            <span class="col2 col2_color">12%</span>
+                            <span class="col3">345</span>
+                        </li>
+                    </ul>
+                    <ul class="list_section tabCon3">
+                        <li class="title">
+                            <span class="col1">商店名</span>
+                            <span class="col2">省</span>
+                            <span class="col3">打印</span>
+                        </li>
+                        <li>
+                            <span class="col1"><a href="#">呀呀呀呀呀呀呀呀呀</a></span>
+                            <span class="col2 col2_color">14%</span>
+                            <span class="col3">345</span>
+                        </li>
+                        <li>
+                            <span class="col1"><a href="#">呀呀呀呀呀呀呀呀呀</a></span>
+                            <span class="col2 col2_color">14%</span>
+                            <span class="col3">345</span>
+                        </li>
+                        <li>
+                            <span class="col1"><a href="#">呀呀呀呀呀呀呀呀呀</a></span>
+                            <span class="col2 col2_color">14%</span>
+                            <span class="col3">345</span>
+                        </li>
+                        <li>
+                            <span class="col1"><a href="#">呀呀呀呀呀呀呀呀呀</a></span>
+                            <span class="col2 col2_color">14%</span>
+                            <span class="col3">345</span>
+                        </li>
+                        <li>
+                            <span class="col1"><a href="#">呀呀呀呀呀呀呀呀呀</a></span>
+                            <span class="col2 col2_color">14%</span>
+                            <span class="col3">345</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="side_section">
+            <h2 class="main_title">
+                <strong>SHOP <span>今日推荐</span></strong>
+                <a href="#"><img src="img/more.gif" alt="more"></a>
+            </h2>
+            <div class="wrap_section2">
+                <ul class="pic_list">
+                    <li>
+                        <div class="img fl">
+                            <a href="#"><img src="img/content/pic4.gif" alt=""></a>
+                        </div>
+                        <div class="text fr">
+                            <h3><a href="#">拉拉啦啦美食百汇</a></h3>
+                            <p>
+                                口味：<a href="#">啦啦啦啦</a><br/>
+                                区域：<a href="#">hahfka</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img fl">
+                            <a href="#"><img src="img/content/pic1.gif" alt=""></a>
+                        </div>
+                        <div class="text fr">
+                            <h3><a href="#">拉拉啦啦美食百汇</a></h3>
+                            <p>
+                                口味：<a href="#">啦啦啦啦</a><br/>
+                                区域：<a href="#">hahfka</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img fl">
+                            <a href="#"><img src="img/content/pic3.gif" alt=""></a>
+                        </div>
+                        <div class="text fr">
+                            <h3><a href="#">拉拉啦啦美食百汇</a></h3>
+                            <p>
+                                口味：<a href="#">啦啦啦啦</a><br/>
+                                区域：<a href="#">hahfka</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img fl">
+                            <a href="#"><img src="img/content/pic2.gif" alt=""></a>
+                        </div>
+                        <div class="text fr">
+                            <h3><a href="#">拉拉啦啦美食百汇</a></h3>
+                            <p>
+                                口味：<a href="#">啦啦啦啦</a><br/>
+                                区域：<a href="#">hahfka</a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="side_section">
+            <h2 class="main_title">
+                <strong>360 <sup>。</sup> <span>全景逛店</span></strong>
+                <a href="#"><img src="img/more.gif" alt="more"></a>
+            </h2>
+            <div class="shopping">
+                <a href="http://www.miaov.com/2013">
+                    <img src="img/content/360.gif" alt="">
+                    <span>CBD核心商圈啦啦啦啦</span>
+                </a>
+            </div>
+        </div>
+        <div class="side_section">
+            <h2 class="main_title">
+                <strong>SHOP <span>折扣店</span></strong>
+                <a href="#"><img src="img/more.gif" alt="more"></a>
+            </h2>
+            <div class="wrap_section3">
+                <ul class="pic_list">
+                    <li>
+                        <div class="img fl">
+                            <a href="#"><img src="img/content/pic1.gif" alt=""></a>
+                        </div>
+                        <div class="text fr">
+                            <h3><a href="#">拉拉啦啦美食百汇</a></h3>
+                            <p>
+                                口味：<a href="#">啦啦啦啦</a><br/>
+                                区域：<a href="#">hahfka</a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list_section">
+                    <li><a href="#"><em>[<span>休闲</span>]</em> 这里随便写点什么吧</a></li>
+                    <li><a href="#"><em>[<span>休闲</span>]</em> 这里随便写点什么吧</a></li>
+                    <li><a href="#"><em>[<span>休闲</span>]</em> 这里随便写点什么吧</a></li>
+                    <li><a href="#"><em>[<span>休闲</span>]</em> 这里随便写点什么吧</a></li>
+                    <li><a href="#"><em>[<span>休闲</span>]</em> 这里随便写点什么吧</a></li>
+                    <li><a href="#"><em>[<span>休闲</span>]</em> 这里随便写点什么吧</a></li>
+                    <li><a href="#"><em>[<span>休闲</span>]</em> 这里随便写点什么吧</a></li>
+                    <li><a href="#"><em>[<span>休闲</span>]</em> 这里随便写点什么吧</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="side_section">
+            <h2 class="main_title">
+                <strong>COUPONS <span>最新加盟</span></strong>
+                <a href="#"><img src="img/more.gif" alt="more"></a>
+            </h2>
+            <div class="wrap_section4">
+                <ul class="pic_list">
+                    <li>
+                        <div class="img">
+                            <a href="#"><img src="img/content/pic3.gif" alt=""></a>
+                        </div>
+                        <div class="text">
+                            <h3><a href="#">拉拉啦啦美食百汇</a></h3>
+                            <p>
+                                口味：<a href="#">啦啦啦啦</a><br/>
+                                区域：<a href="#">hahfka</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <a href="#"><img src="img/content/pic2.gif" alt=""></a>
+                        </div>
+                        <div class="text">
+                            <h3><a href="#">拉拉啦啦美食百汇</a></h3>
+                            <p>
+                                口味：<a href="#">啦啦啦啦</a><br/>
+                                区域：<a href="#">hahfka</a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list_section">
+                    <li><a href="#"><em>[<span>休闲</span>]</em> 这里随便写点什么吧</a></li>
+                    <li><a href="#"><em>[<span>休闲</span>]</em> 这里随便写点什么吧</a></li>
+                    <li><a href="#"><em>[<span>休闲</span>]</em> 这里随便写点什么吧</a></li>
+                    <li><a href="#"><em>[<span>休闲</span>]</em> 这里随便写点什么吧</a></li>
+                    <li><a href="#"><em>[<span>休闲</span>]</em> 这里随便写点什么吧</a></li>
+                    <li><a href="#"><em>[<span>休闲</span>]</em> 这里随便写点什么吧</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <a href="#">关于我们</a> |
+    <a href="#">联系我们</a> |
+    <a href="#">版权声明</a> |
+    <a href="#">加入我们</a> |
+    <a href="#">问题反馈</a> |
+    <a href="#">友情链接</a> |
+    <a href="#">网站地图</a> |
+    <a href="#">视频索引</a><br>
+    Copyright © 2017 www.joyous.com JOY欢乐网 版权所有 <span>广ICP证2333333号</span>
+</div>
+</body>
+</html>
